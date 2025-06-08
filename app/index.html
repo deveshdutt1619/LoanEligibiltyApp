@@ -71,7 +71,7 @@
 
       try {
         const logicAppRes = await fetch(logicAppUrl, {
-          method: "PUT",
+          method: "GET",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload)
         });
