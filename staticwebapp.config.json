@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "route": "/api/*",
+      "allowedMethods": ["GET", HEAD, OPTIONS, POST, PUT, DELETE"]
+    }
+  ]
+}
