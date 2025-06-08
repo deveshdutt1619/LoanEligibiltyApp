@@ -40,7 +40,7 @@
       const uploadUrl = `${blobSasUrl}/${file.name}`;
       try {
         const uploadRes = await fetch(uploadUrl, {
-          method: "PUT",
+          method: "POST",
           headers: {
             "x-ms-blob-type": "BlockBlob",
             "Content-Type": file.type
@@ -70,7 +70,7 @@
 
       try {
         const logicAppRes = await fetch(logicAppUrl, {
-          method: "PUT","POST",
+          method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload)
         });
