@@ -40,7 +40,7 @@
       const uploadUrl = `${blobSasUrl}/${file.name}`;
       try {
         const uploadRes = await fetch(uploadUrl, {
-          method: "POST",
+          method: "PUT",
           headers: {
             "x-ms-blob-type": "BlockBlob",
             "Content-Type": file.type
