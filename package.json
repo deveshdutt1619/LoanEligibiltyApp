@@ -2,6 +2,7 @@
   "name": "static-web-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo \"No build step needed\""
-  }
+  "build": "react-scripts build",
+  "build:azure": "react-scripts build --some-azure-specific-flag"
+}
 }
