@@ -1,8 +1,8 @@
 {
-  "routes": [
-    {
-      "route": "/api/*",
-      "allowedMethods": ["GET", HEAD, OPTIONS, POST, PUT, DELETE"]
-    }
-  ]
+  "globalHeaders": {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff"
+  }
 }
